@@ -222,7 +222,7 @@ const projects = [
         color: "text-red-500",
       },
       {
-        name: "React",
+        name: "Swagger",
         color: "text-cyan-500",
       },
     ],
@@ -252,7 +252,7 @@ const projects = [
         color: "text-green-500",
       },
       {
-        name: "React",
+        name: "Swagger",
         color: "text-cyan-500",
       },
     ],

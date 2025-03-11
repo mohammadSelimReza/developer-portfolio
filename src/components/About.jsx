@@ -35,6 +35,9 @@ const ServiceCard = ({ index, title, icon }) => (
     </motion.div>
   </Tilt>
 );
+const handleResume = () =>{
+  window.open("/cv/Resume-of-Selim Reza.pdf", "_blank");
+}
 
 const About = () => {
   return (
@@ -45,13 +48,24 @@ const About = () => {
       </motion.div> 
 
       <div className='flex flex-col-reverse md:flex-row justify-center items-center mt-4 max-w-7xl mx-auto leading-[30px] text-gray-200 gap-x-10'>
-        <motion.h3
+       <div className="w-2/3">
+       <motion.h3
         variants={fadeIn("", "", 0.1, 1)}
-        className="w-2/3 text-justify sm-w-1/2 flex justify-center items-center font-medium "
+        className="text-justify flex justify-center items-center font-medium "
       >
-        I'm a passionate backend developer with a strong foundation in Python, specializing in Django.I thrive on solving complex problems and creating scalable, user-friendly systems. Constantly learning and exploring new technologies, I aim to grow and contribute to impactful, innovative projects in the tech industry.
+        Passionate backend developer specializing in Django with a strong Python foundation. I love solving complex problems and building scalable systems while continuously learning and exploring new technologies
       </motion.h3>
-      <div className='w-1/2'>
+      <div className="flex justify-center items-center mt-4">
+      <button
+            onClick={handleResume}
+            className="border-2 border-blue-400 text-white font-bold py-2 px-4 rounded-lg 
+             hover:bg-blue-400 hover:text-black transition-all duration-300"
+          >
+            Get My Resume
+          </button>
+      </div>
+       </div>
+      <div className='w-1/3 flex justify-end items-center'>
         <img src={me} className="rounded-full" alt="" />
       </div>
       </div>
